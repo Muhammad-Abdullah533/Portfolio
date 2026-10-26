@@ -16,7 +16,7 @@
 
 | Group | Tasks | Done |
 | ----- | ----- | ---- |
-| G0 — Foundation | T001–T014 | 13 / 14 |
+| G0 — Foundation | T001–T014 | 14 / 14 |
 | G1 — Design system and shell | T015–T023 | 9 / 9 |
 | G2 — Content layer | T024–T033 | 10 / 10 |
 | G3 — Static sections | T034–T040 | 7 / 7 |
@@ -25,9 +25,9 @@
 | G6 — Contact | T051–T058 | 8 / 8 |
 | G7 — SEO and resilience | T059–T066 | 7 / 8 |
 | G8 — QA and polish | T067–T079 | 2 / 13 |
-| G9 — Deploy | T080–T084 | 0 / 5 |
+| G9 — Deploy | T080–T084 | 1 / 5 |
 | G10 — Content finalization | T085–T095 | 9 / 11 |
-| **Total** | **T001–T095** | **75 / 95** |
+| **Total** | **T001–T095** | **77 / 95** |
 
 ### Implementation status (2026-10-25)
 
@@ -38,18 +38,17 @@ Code, content, and all routes are implemented. `lint`, `typecheck`, `format:chec
 
 Remaining work is verification and release, not implementation:
 
-- **T001** — `git init` and first commit (awaiting owner approval).
 - **T066** — only an SVG icon ships; `.ico` not generated.
 - **G8** — device/browser QA, axe, Lighthouse, real Resend email, security-header check,
   `npm audit`.
-- **G9** — GitHub push and Vercel deployment.
+- **G9** — GitHub push complete (`Muhammad-Abdullah533/Portfolio`); Vercel deployment pending.
 - **T088 / T091** — LinkedIn URL and KhataFlow screenshots still pending from the owner.
 
 ---
 
 ## G0 — Foundation
 
-- [ ] **T001** Initialize git repository, `.gitignore`, `README.md` skeleton, `.nvmrc`/`engines` (Node ≥ 20). — *Constitution §3*
+- [x] **T001** Initialize git repository, `.gitignore`, `README.md` skeleton, `.nvmrc`/`engines` (Node ≥ 20). — *Constitution §3*
 - [x] **T002** Scaffold Next.js 15 + TypeScript + Tailwind v4 + ESLint + Prettier into the existing folder (no nested directory). — *Plan §1*
 - [x] **T003** Configure `tsconfig.json`: `strict`, `noUncheckedIndexedAccess`, `noImplicitOverride`, `@/*` alias. — *Constitution VII*
 - [x] **T004** Configure Prettier with `printWidth: 100` and `prettier-plugin-tailwindcss`. — *Plan §15*
@@ -191,7 +190,7 @@ Remaining work is verification and release, not implementation:
 
 ## G9 — Deploy
 
-- [ ] **T080** Push repository to GitHub under `Muhammad-Abdullah533`. — *Plan §17*
+- [x] **T080** Push repository to GitHub under `Muhammad-Abdullah533`. — *Plan §17*
 - [ ] **T081** Import to Vercel; add Production + Preview env vars. — *Plan §17*
 - [ ] **T082** Production smoke test: home, project page, contact, 404, OG. — *Plan §17*
 - [ ] **T083** Lighthouse against the production URL; record results. — *Constitution III*
